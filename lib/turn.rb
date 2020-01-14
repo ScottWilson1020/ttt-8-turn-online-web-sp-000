@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 require 'pry'
+=======
+>>>>>>> 3b93fe716690e8aee2725e985eeb61ae7eb27f08
 
 def display_board(board)
  puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -11,9 +14,13 @@ end
 
 
 def input_to_index(user_input)
+<<<<<<< HEAD
 
   converted_input = user_input.to_i-1
    
+=======
+ converted_input = user_input.to_i-1
+>>>>>>> 3b93fe716690e8aee2725e985eeb61ae7eb27f08
 end
 
 def position_taken?(board,index)
@@ -38,6 +45,7 @@ end
   
 def turn(board)
   puts "Please enter 1-9:"
+<<<<<<< HEAD
   user_action = gets.strip
   index = input_to_index(user_action)
   if valid_move?(board,index) == true
@@ -47,5 +55,11 @@ def turn(board)
    turn(board)
  
 end
+=======
+  turn = gets
+  turn.input_to_index
+  
+  
+>>>>>>> 3b93fe716690e8aee2725e985eeb61ae7eb27f08
 end
   
